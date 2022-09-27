@@ -42,14 +42,14 @@
    **************************************************************/
   
   .page {
-     max-width: 650px;
+    max-width: 650px;
   
-     padding: 0 20px;
-     margin-left: auto;
-     margin-right: auto;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
   
-     position: relative;
-     min-height: 100%;
+    position: relative;
+    min-height: 100%;
   }
   
   .page::after {
@@ -95,7 +95,7 @@
     font-size: 42px;
     font-weight: 100;
     text-transform: uppercase;
-    margin: 15px auto 4px;
+    margin: px auto 4px;
   }
   
   /* Avatar */
@@ -108,8 +108,8 @@
   }
   
   .banner-avatar img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
   }
   
@@ -125,12 +125,10 @@
   }
   
   .banner-avatar a:hover img {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-  }
-  
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(90deg);
+  }  
   /* Links */
-  
   .banner-links {
     display: inline;
     padding-left: 0;
@@ -140,36 +138,35 @@
     display: inline-block;
     list-style-type: none;
     text-transform: uppercase;
-    width: 125px;
+    width: 120px;
   }
   
   .banner-link a {
     display: inline-block;
     height: 20px;
-    padding-top: 1px;
-    padding-left: 24px;
+    padding-top: 2px;
+    padding-left: 30px;
     background-repeat: no-repeat;
-    background-size: 18px 18px;
+    background-size: 20px 20px;
   }
   
   .twitter a {
-  /* background-image: url("D:/_Amjad/Protfolio/Static/images/twitter.png");-->*/
     background-image: url('images/twitter.png');
-    
   }
   
   .github a {
-   background-image: url('images/github.png');
+    background-image: url('images/github.png');
   }
   
   .linkedin a {
-   background-image: url("images/Linkdin.png");
+    background-image: url("images/Linkdin.png");
   }
-
   .itch a{
     background-image: url("images/Itch.png");
   }
-  
+  .youtube a{
+    background-image: url("images/youtube.png");
+  }
   /* On mobile display links vertically */
   /* And reduce name size */
   
@@ -183,6 +180,9 @@
     .banner-link a {
       display: list-item;;
     }
+    .project-fit img{
+      margin-left: 50px;
+    }
   }
   
   /**************************************************************
@@ -190,7 +190,7 @@
    **************************************************************/
   
   .block-header {
-    margin-top: 42px;
+    margin-top: 40px;
     border-bottom: 0.25px dotted #000;
     margin-bottom: 21px;
     display: table;
@@ -235,14 +235,18 @@
     width: 33%;
     vertical-align: top;
   }
-  
-  .project-left img {
+  .project-left{
+    width: 320px;
+    height: 200px;
+  }
+  .project-left img{
     width: 320px;
     height: 180px;
   }
   .project-fit img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
   }
   
   .project-right {
@@ -275,19 +279,17 @@
     transition: transform 0.15s ease-out;
     transition: transform 0.15s ease-out, -webkit-transform 0.15s ease-out;
   }
-  
+
   .project a:hover {
     text-decoration: none;
     color: #4198E6;
-    -webkit-transform: scale(1.025);
-            transform: scale(1.025);
+    -webkit-transform: scale(1.125);
+            transform: scale(1.125);
   }
-  
   .project a:focus {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
-  
   .project a:visited {
     text-decoration: none;
   }
